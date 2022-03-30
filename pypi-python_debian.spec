@@ -5,20 +5,17 @@
 # Source0 file verified with key 0xBBC17EBB1396F2F7 (stuart@debian.org)
 #
 Name     : pypi-python_debian
-Version  : 0.1.42
-Release  : 3
-URL      : https://files.pythonhosted.org/packages/3d/2c/fb875214b4905568ab036275b5f25da201b9fc70a7affb60c9ba2f44dc21/python-debian-0.1.42.tar.gz
-Source0  : https://files.pythonhosted.org/packages/3d/2c/fb875214b4905568ab036275b5f25da201b9fc70a7affb60c9ba2f44dc21/python-debian-0.1.42.tar.gz
-Source1  : https://files.pythonhosted.org/packages/3d/2c/fb875214b4905568ab036275b5f25da201b9fc70a7affb60c9ba2f44dc21/python-debian-0.1.42.tar.gz.asc
+Version  : 0.1.43
+Release  : 4
+URL      : https://files.pythonhosted.org/packages/0c/c1/97829fac1e9889dd0ea0d7c018bbe3901753499a1eaafa7747f718257ef2/python-debian-0.1.43.tar.gz
+Source0  : https://files.pythonhosted.org/packages/0c/c1/97829fac1e9889dd0ea0d7c018bbe3901753499a1eaafa7747f718257ef2/python-debian-0.1.43.tar.gz
+Source1  : https://files.pythonhosted.org/packages/0c/c1/97829fac1e9889dd0ea0d7c018bbe3901753499a1eaafa7747f718257ef2/python-debian-0.1.43.tar.gz.asc
 Summary  : Debian package related modules
 Group    : Development/Tools
 License  : GPL-2.0+
 Requires: pypi-python_debian-python = %{version}-%{release}
 Requires: pypi-python_debian-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: python-debian
-Provides: python-debian-python
-Provides: python-debian-python3
 BuildRequires : pypi(chardet)
 
 %description
@@ -48,15 +45,15 @@ python3 components for the pypi-python_debian package.
 
 
 %prep
-%setup -q -n python-debian-0.1.42
-cd %{_builddir}/python-debian-0.1.42
+%setup -q -n python-debian-0.1.43
+cd %{_builddir}/python-debian-0.1.43
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641483106
+export SOURCE_DATE_EPOCH=1648618510
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
