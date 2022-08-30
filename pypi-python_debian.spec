@@ -5,11 +5,11 @@
 # Source0 file verified with key 0xBBC17EBB1396F2F7 (stuart@debian.org)
 #
 Name     : pypi-python_debian
-Version  : 0.1.44
-Release  : 10
-URL      : https://files.pythonhosted.org/packages/52/1e/971d6fc2f9da72155314b3130643198e4f0c029f6e8a8ae040a45e072d44/python-debian-0.1.44.tar.gz
-Source0  : https://files.pythonhosted.org/packages/52/1e/971d6fc2f9da72155314b3130643198e4f0c029f6e8a8ae040a45e072d44/python-debian-0.1.44.tar.gz
-Source1  : https://files.pythonhosted.org/packages/52/1e/971d6fc2f9da72155314b3130643198e4f0c029f6e8a8ae040a45e072d44/python-debian-0.1.44.tar.gz.asc
+Version  : 0.1.47
+Release  : 11
+URL      : https://files.pythonhosted.org/packages/bf/30/7ea365c55d68d61045ecf614239ef6c221d895f2c1b7c36741f5f5c5e77a/python-debian-0.1.47.tar.gz
+Source0  : https://files.pythonhosted.org/packages/bf/30/7ea365c55d68d61045ecf614239ef6c221d895f2c1b7c36741f5f5c5e77a/python-debian-0.1.47.tar.gz
+Source1  : https://files.pythonhosted.org/packages/bf/30/7ea365c55d68d61045ecf614239ef6c221d895f2c1b7c36741f5f5c5e77a/python-debian-0.1.47.tar.gz.asc
 Summary  : Debian package related modules
 Group    : Development/Tools
 License  : GPL-2.0+
@@ -45,10 +45,10 @@ python3 components for the pypi-python_debian package.
 
 
 %prep
-%setup -q -n python-debian-0.1.44
-cd %{_builddir}/python-debian-0.1.44
+%setup -q -n python-debian-0.1.47
+cd %{_builddir}/python-debian-0.1.47
 pushd ..
-cp -a python-debian-0.1.44 buildavx2
+cp -a python-debian-0.1.47 buildavx2
 popd
 
 %build
@@ -56,7 +56,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1656698655
+export SOURCE_DATE_EPOCH=1661880187
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
