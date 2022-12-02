@@ -1,5 +1,5 @@
 PKG_NAME := pypi-python_debian
-URL = https://files.pythonhosted.org/packages/37/fe/a80e59f222ea6c20aa4a52a6168794de3ddd222fa4ce8de1e1f13b310f69/python-debian-0.1.48.tar.gz
+URL = https://files.pythonhosted.org/packages/ce/8d/2ebc549adf1f623d4044b108b30ff5cdac5756b0384cd9dddac63fe53eae/python-debian-0.1.49.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
